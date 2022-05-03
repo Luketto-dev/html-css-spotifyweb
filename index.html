@@ -18,7 +18,7 @@
     <!-- contenitore principale con 100vh ed-flex -->
     <div class="app-container">
         <!-- contenitore per sidebar e blocco album con d-flex -->
-        <div class="flex-grow d-flex">
+        <div class="flex-grow overflow-hidden d-flex">
             <!-- sidebar con shrink 0 per non farla stringere trppo -->
             <div class="sidebar d-flex column flex-shrink">
                 <!-- logo -->
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <!-- display container con grow per farlo allargare al massimo -->
-            <div class="display-container d-flex flex-grow column">
+            <div class="display-container overflow-hidden d-flex flex-grow column">
                 <!-- barra upgrade -->
                 <div class="display-upgrade flex-shrink">
                     <div class="upgrade-button">
@@ -75,7 +75,124 @@
                 </div>
                 <!-- display-albums -->
                 <div class="display-albums flex-grow">
-                    
+                    <!-- sezioni degli album musicali -->
+                    <div class="section section-recently">
+                        <div class="section-text">
+                            <h3 class="section-title">Recently played</h3>
+                        </div>
+                        <!-- contenitore per mettere le section-card allineate orizzontalmente con flex -->
+                        <div class="d-flex gap-half">
+                            <!-- section-card -->
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section-created-for -->
+                    <div class="section section-created-for">
+                        <div class="section-text">
+                            <h3 class="section-title">Creato per John Doe</h3>
+                            <h6 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h6>
+                        </div>
+                        <div class="d-flex gap-half">
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- section popular artist -->
+                    <div class="section section-popular-artist">
+                        <div class="section-text">
+                            <h3 class="section-title">Artisti più popolari</h3>
+                            <h6 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h6>
+                        </div>
+                        <div class="d-flex gap-half">
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                            <div class="section-card flex-shrink">
+                                <div class="card-img">
+                                    <img src="img/metal_lifting.jpg" alt="metal">
+                                </div>
+                                <div class="card-text">
+                                    <h5 class="card-title">Heavy Metal</h5>
+                                    <h6 class="card-subtitle">Subtitle</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
