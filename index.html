@@ -5,12 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web-app</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <!-- font-awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- contenitore principale con 100vh ed-flex -->
+    <div class="app-container">
+        <!-- contenitore per sidebar e blocco album con d-flex -->
+        <div class="flex-grow d-flex">
+            <!-- sidebar con shrink 0 per non farla stringere trppo -->
+            <div class="sidebar d-flex column flex-shrink">
+                <!-- logo -->
+                <div class="sidebar-logo flex-shrink">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <!-- menu-sidebar -->
+                <ul class="sidebar-nav flex-shrink">
+                    <li class="sidebar-nav-item">
+
+                    </li>
+                    <li class="sidebar-nav-item"></li>
+                    <li class="sidebar-nav-item"></li>
+                </ul>
+                <!-- crea playlist e nomi playlist -->
+                <div class="sidebar-playlist flex-grow">
+
+                </div>
+                <!-- install app e nome utente -->
+                <div class="sidebar-bottom-info flex-shrink">
+
+                </div>
+            </div>
+            <!-- display container con grow per farlo allargare al massimo -->
+            <div class="display-container d-flex flex-grow column">
+                <!-- barra upgrade -->
+                <div class="display-upgrade flex-shrink">
+                    <div class="upgrade-button">
+                        <a href="">effettua l'upgrade</a>
+                    </div>
+                </div>
+                <!-- display navbar -->
+                <div class="display-nav flex-shrink">
+                    <ul class="display-nav-list">
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                        <li class="display-nav-list-item">
+                            <a href="">in evidenza</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- display-albums -->
+                <div class="display-albums flex-grow">
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- contenitore per controlli riproduzione musica -->
+        <div class="playback-control-container flex-shrink">
+
+        </div>
+    </div>
     
 </body>
 </html>

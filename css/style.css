@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.app-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    /* solo debug */
+    background-color: aqua;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.flex-grow{
+    flex-grow: 1;
+}
+
+.flex-shrink{
+    flex-shrink: 0;
+}
+
+/* sidebar */
+.sidebar{
+    min-width: 200px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    /* debug */
+    background-color: #000000;
+}
+
+.sidebar .sidebar-logo{
+    width: 125px;
+}
+
+.sidebar .sidebar-nav{
+    list-style: none;
+    
+    /* debug */
+    background-color: red;
+    padding: 3rem 0;
+}
+
+.sidebar .sidebar-playlist{
+    /* debug */
+    background-color: violet;
+}
+
+.sidebar .sidebar-bottom-info{
+    /* debug */
+    padding: 2rem;
+    background-color: aqua;
+}
+
+/* display-container */
+.display-container{
+    /* debug */
+    background-color: #141922;
+}
+
+/* display upgrade */
+.display-container .display-upgrade{
+    background-color: #080B12;
+    padding-top: .5rem ;
+    padding-bottom: 1rem;
+    /* debug */
+}
+
+.display-upgrade .upgrade-button{
+    text-align: right;
+}
+
+.display-upgrade .upgrade-button a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .7rem;
+    padding: .5rem 2rem;
+    background-color: #080B12;
+    border: 1px solid white;
+    border-radius: 25px;
+    color: white;
+}
+
+/* display-nav */
+.display-container .display-nav{
+    /* debug */
+    background-color: yellow;
+    padding: 1rem 0;
+}
+
+.display-nav .display-nav-list{
+    text-align: center;
+}
+
+.display-nav-list .display-nav-list-item{
+    display: inline-block;
+    list-style: none;
+}
+
+.display-nav-list .display-nav-list-item a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem .5rem;
+    font-size: .7rem;
+    
+}
+
+
+.playback-control-container{
+    /* debug */
+    padding: 2rem 0;
+    background-color: #282828;
+}
+
