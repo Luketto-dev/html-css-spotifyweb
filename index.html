@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- query-style -->
+    <link rel="stylesheet" href="css/query.css">
 </head>
 <body>
     <!-- contenitore principale con 100vh ed-flex -->
@@ -47,13 +49,13 @@
                     </li>
                 </ul>
                 <!-- crea playlist e nomi playlist -->
-                <div class="sidebar-playlist flex-grow">
+                <div class="sidebar-playlist flex-grow overflow-hidden">
                     <h5 class="sidebar-playlist-title">playlist</h5>
                     <div class="add-playlist">
                         <button class="add-playlist-icon">+</button>
                         <span>Crea Playlist</span>
                     </div>
-                    <ul class="sidebar-playlist-list">
+                    <ul class="sidebar-playlist-list flex-grow">
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
@@ -231,9 +233,53 @@
 
             </div>
         </div>
-        <!-- contenitore per controlli riproduzione musica -->
-        <div class="playback-control-container flex-shrink">
-            
+        <!-- contenitore per controlli musica -->
+        <div class="player flex-shrink">
+            <!-- album-played -->
+            <div class="album-played flex-shrink">
+                <div class="d-flex align-center">
+                    <div class="album-played-img">
+                        <img src="img/player_left.jpg" alt="">
+                    </div>
+                    <div class="album-played-name">
+                        <h5>Sinister</h5>
+                        <h6>Brano Nome</h6>
+                    </div>
+                </div>
+                <div class="album-played-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <!-- player-controls -->
+            <div class="player-controls d-flex column">
+                <div class="player-controls-icon">
+                    <i class="fa-solid fa-repeat"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="player-controls-time align-center">
+                    <div class="timer">0.25</div>
+                    <div class="time-bar flex-grow">
+                        <div class="time-bar-advancement"></div>
+                    </div>
+                    <div class="timer">4.35</div>
+                </div>
+            </div>
+            <!-- player-volume -->
+            <div class="player-volume d-flex flex-shrink align-center">
+                <div class="player-volume-icon flex-shrink">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="player-volume-volume-bar flex-grow flex-shrink">
+                    <div class="volume-bar-progres"></div>
+                </div>
+            </div>
+
         </div>
     </div>
     

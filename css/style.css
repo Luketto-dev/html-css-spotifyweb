@@ -54,7 +54,7 @@ html{
 
 /* sidebar */
 .sidebar{
-    min-width: 240px;
+    min-width: 200px;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
@@ -94,6 +94,8 @@ html{
 }
 
 .sidebar .sidebar-playlist{
+    display: flex;
+    flex-direction: column;
     /* debug */
 }
 
@@ -126,6 +128,7 @@ html{
 .sidebar-playlist .sidebar-playlist-list{
     list-style: none;
     font-size: .8rem;
+    overflow: auto;
 }
 
 .sidebar-playlist .sidebar-playlist-list .sidebar-playlist-list-item{
@@ -216,8 +219,6 @@ html{
     
 }
 
-
-
 /* display albums/ section */
 .display-albums{
     padding-left: 1rem;
@@ -253,9 +254,117 @@ html{
     padding-top: .5rem;
 }
 
-.playback-control-container{
-    /* debug */
-    padding: 2rem 0;
+/* player */
+.player{
     background-color: #282828;
+    color: var(--color-primary);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+     /* debug */
+    padding: 0 .5rem;
 }
 
+/* album-played */
+.player .album-played{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    max-width: calc(200px - .5rem);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.album-played .album-played-img{
+    padding-right: .5rem;
+}
+
+.album-played .album-played-img img{
+    width: 40px;
+    display: block;
+}
+
+.album-played .album-played-name h6{
+    color: var(--color-secondary);
+}
+
+.album-played-icons{
+    display: flex;
+    gap: .5rem;
+    color: var(--color-secondary);
+}
+
+
+/* player-controls */
+.player .player-controls{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 40%;
+    max-width: 600px;
+    justify-content: space-between;
+}
+
+.player-controls .player-controls-icon{
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    align-items: center;
+}
+
+.player-controls-icon .fa-circle-play{
+    font-size: 1.7rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.player-controls .player-controls-time{
+    display: flex;
+}
+
+.player-controls-time .timer{
+    font-size: .7rem;
+}
+
+.player-controls-time .time-bar{
+    height: 3px;
+    background-color: var(--color-secondary);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border-radius: 50px;
+}
+
+.time-bar .time-bar-advancement{
+    height: 3px;
+    background-color: var(--color-primary);
+    width: 20%;
+    border-radius: 50px;
+}
+
+/* player-volume */
+.player .player-volume{
+    padding: 1rem 0;
+    width: 25%;
+    max-width: calc(200px - .5rem);
+}
+
+.player-volume .player-volume-icon{
+    font-size: .8rem;
+}
+
+.player-volume .player-volume-icon i{
+    padding-right: 1rem;
+}
+
+.player-volume .player-volume-volume-bar{
+    height: 3px;
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+}
+
+.player-volume-volume-bar .volume-bar-progres{
+    height: 3px;
+    background-color: var(--color-primary);
+    border-radius: 50px;
+    width: 20%;
+}
