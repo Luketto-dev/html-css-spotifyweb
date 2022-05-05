@@ -20,7 +20,7 @@
     <!-- contenitore principale con 100vh ed-flex -->
     <div class="app-container">
         <!-- contenitore per sidebar e blocco album con d-flex -->
-        <div class="flex-grow overflow-hidden d-flex">
+        <div class="flex-grow d-flex">
             <!-- sidebar con shrink 0 per non farla stringere trppo -->
             <div class="sidebar d-flex column flex-shrink">
                 <!-- logo -->
@@ -52,7 +52,7 @@
                     </li>
                 </ul>
                 <!-- crea playlist e nomi playlist -->
-                <div class="sidebar-playlist flex-grow overflow-hidden">
+                <div class="sidebar-playlist flex-grow">
                     <h5 class="sidebar-playlist-title d-none-xs">playlist</h5>
                     <div class="add-playlist d-none-xs">
                         <button class="add-playlist-icon">+</button>
@@ -82,7 +82,7 @@
             </div>
 
             <!-- display container con grow per farlo allargare al massimo -->
-            <div class="display-container overflow-hidden d-flex flex-grow column">
+            <div class="display-container d-flex flex-grow column">
                 <!-- barra upgrade -->
                 <div class="display-upgrade flex-shrink">
                     <div class="upgrade-button">
@@ -93,46 +93,67 @@
                 <div class="display-nav flex-shrink">
                     <ul class="display-nav-list">
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="#">in evidenza
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">podcast</a>
+                            <a href="#">podcast
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">classifiche</a>
+                            <a href="#">classifiche
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">generi e mood</a>
+                            <a href="#">generi e mood
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">nuove uscite</a>
+                            <a href="#">nuove uscite
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">scopri</a>
+                            <a href="#">scopri
+                                <div class="focus-bar"></div>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <!-- display-albums -->
                 <div class="display-albums flex-grow">
                     <!-- sezioni degli album musicali -->
-                    <div class="section section-recently">
+                    <div class="section">
                         <div class="section-text">
                             <h2 class="section-title">Recently played</h2>
                         </div>
                         <!-- contenitore per mettere le section-card allineate orizzontalmente con flex -->
-                        <div class="d-flex gap-half wrap-md">
+                        <div class="d-flex gap-half wrap-lg">
                             <!-- section-card -->
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/metal_lifting.jpg" alt="metal">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="card-title">Heavy Metal</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
+                                
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/stranger.jpeg" alt="stranger">
                                 </div>
                                 <div class="card-text">
@@ -140,8 +161,12 @@
                                     <h5 class="card-subtitle">Keyle Dixon & Michael Stein</h5>
                                 </div>
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/aquietplace.jpeg" alt="aquietpiace">
                                 </div>
                                 <div class="card-text">
@@ -149,8 +174,12 @@
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/split.jpeg" alt="split">
                                 </div>
                                 <div class="card-text">
@@ -158,8 +187,12 @@
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card  section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card  section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/cure.jpeg" alt="cure">
                                 </div>
                                 <div class="card-text">
@@ -167,8 +200,12 @@
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/sinister.jpeg" alt="sinister">
                                 </div>
                                 <div class="card-text">
@@ -179,22 +216,30 @@
                         </div>
                     </div>
                     <!-- section-created-for -->
-                    <div class="section section-created-for">
+                    <div class="section">
                         <div class="section-text">
                             <h2 class="section-title">Creato per John Doe</h2>
                             <h5 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h6>
                         </div>
-                        <div class="d-flex gap-half wrap-md">
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                        <div class="d-flex gap-half wrap-lg">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/radar.jpeg" alt="radar">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="card-title">Release Radar</h4>
                                 </div>
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
                                 <div class="card-img">
+                                    <div class="card-filter"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img src="img/mixdaily.jpeg" alt="mixdayli">
                                 </div>
                                 <div class="card-text">
@@ -204,14 +249,18 @@
                         </div>
                     </div>
                     <!-- section popular artist -->
-                    <div class="section section-popular-artist">
+                    <div class="section">
                         <div class="section-text">
                             <h2 class="section-title">Artisti più popolari</h2>
                             <h5 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
                         </div>
-                        <div class="d-flex gap-half wrap-md">
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
-                                <div class="card-img card-img-radius">
+                        <div class="d-flex gap-half wrap-lg">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
+                                <div class="card-img">
+                                    <div class="card-filter card-filter-radius"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img class="img-radius" src="img/youg.jpeg" alt="youg">
                                 </div>
                                 <div class="card-text">
@@ -219,8 +268,12 @@
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
-                                <div class="card-img card-img-radius">
+                            <div class="section-card section-card-lg section-card-md section-card-xs flex-shrink">
+                                <div class="card-img">
+                                    <div class="card-filter card-filter-radius"></div>
+                                    <div class="card-img-play">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                     <img class="img-radius" src="img/einaudi.jpeg" alt="metal">
                                 </div>
                                 <div class="card-text">
