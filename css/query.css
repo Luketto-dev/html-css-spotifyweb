@@ -11,7 +11,46 @@
 
 
 @media screen and (max-width: 700px){
-    
+    .section .section-title{
+        font-size: 1.3rem;
+    }
+    .section-card-md .card-subtitle,
+    .section .section-subtitle{
+        font-size: .6rem;
+    }
+
+    .section .section-card-md{
+        flex-basis: calc(25% - .5rem);
+    }
+
+    .section-card-md .card-title{
+        font-size: .7rem;
+    }
+
+    .wrap-md{
+        flex-wrap: wrap;
+    }
+
+    .album-played-icons{
+        font-size: .8rem;
+    }
+
+    .album-played-name{
+        font-size: .8rem;
+    }
+
+    .player-controls .player-controls-icon{
+        font-size: .8rem;
+    }
+
+    .player-controls-icon .fa-circle-play{
+        font-size: 1.4rem;
+    }
+
+
+    .player-volume .player-volume-icon{
+        font-size: .6rem;
+    }
 }
 
 
@@ -23,7 +62,31 @@
 
 
 @media screen and (max-width: 600px){
-    
+    .section .section-card-s{
+        flex-basis: calc(50% - .5rem);
+    }
+
+    .section-card-s .card-title{
+        font-size: .9rem;
+    }
+
+    .section-card-s .card-subtitle,
+    .section .section-subtitle{
+        font-size: .8rem;
+    }
+
+    .section .section-title{
+        font-size: 1.4rem;
+    }
+
+    .album-played-icons{
+        flex-direction: column;
+    }
+
+    .player-controls-time .time-bar{
+        margin-right: .6rem;
+        margin-left: .6rem;
+    }
 }
 
 
@@ -32,4 +95,40 @@
 
 @media screen and (max-width: 500px){
     
+    .sidebar{
+        width: auto;
+        padding-left: .3rem;
+        padding-right: .3rem;
+        align-items: center;
+    }
+
+    .sidebar .sidebar-bottom-info .install{
+        border: 0;
+    }
+
+    .sidebar-bottom-info .user-name span img{
+        width: 20px;
+        display: inline-block;
+    }
+
+    .d-none-xs{
+        display: none;
+    }
+
+    .sidebar .logo-small{
+        display: block;
+    }
+
+    
+    
 }
+
+
+
+
+@media screen and (max-width: 400px){
+    .section .section-card-xs{
+        flex-basis: 100%;
+    }
+}
+

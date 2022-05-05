@@ -24,38 +24,41 @@
             <!-- sidebar con shrink 0 per non farla stringere trppo -->
             <div class="sidebar d-flex column flex-shrink">
                 <!-- logo -->
-                <div class="sidebar-logo flex-shrink">
+                <div class="sidebar-logo flex-shrink d-none-xs">
                     <img src="img/logo.svg" alt="logo">
+                </div>
+                <div class="logo-small">
+                    <img src="img/logo-small.svg" alt="logo-small">
                 </div>
                 <!-- menu-sidebar -->
                 <ul class="sidebar-nav flex-shrink">
                     <li class="sidebar-nav-item">
                         <a href="" class="d-flex align-center">
                             <img src="img/home.svg" alt="home">
-                            <div class="label">Home</div>
+                            <div class="label d-none-xs">Home</div>
                         </a>
                     </li>
                     <li class="sidebar-nav-item">
                         <a href="" class="d-flex align-center">
                             <img src="img/search.svg" alt="home">
-                            <div class="label">Cerca</div>
+                            <div class="label d-none-xs">Cerca</div>
                         </a>
                     </li>
                     <li class="sidebar-nav-item">
                         <a href="" class="d-flex align-center">
                             <img src="img/libreria.svg" alt="home">
-                            <div class="label">La tua libreria</div>
+                            <div class="label d-none-xs">La tua libreria</div>
                         </a>
                     </li>
                 </ul>
                 <!-- crea playlist e nomi playlist -->
                 <div class="sidebar-playlist flex-grow overflow-hidden">
-                    <h5 class="sidebar-playlist-title">playlist</h5>
-                    <div class="add-playlist">
+                    <h5 class="sidebar-playlist-title d-none-xs">playlist</h5>
+                    <div class="add-playlist d-none-xs">
                         <button class="add-playlist-icon">+</button>
                         <span>Crea Playlist</span>
                     </div>
-                    <ul class="sidebar-playlist-list flex-grow">
+                    <ul class="sidebar-playlist-list flex-grow d-none-xs">
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
                         <li class="sidebar-playlist-list-item">Nome Playlist</li>
@@ -69,11 +72,11 @@
                 <div class="sidebar-bottom-info flex-shrink">
                     <div class="install">
                         <span><img src="img/download.svg" alt=""></i></span>
-                        <span>install app</span>
+                        <span class="d-none-xs">install app</span>
                     </div>
                     <div class="user-name">
                         <span><img src="img/profile.svg" alt=""></span>
-                        <span>John Doe</span>
+                        <span class="d-none-xs">John Doe</span>
                     </div>
                 </div>
             </div>
@@ -93,19 +96,19 @@
                             <a href="">in evidenza</a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="">podcast</a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="">classifiche</a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="">generi e mood</a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="">nuove uscite</a>
                         </li>
                         <li class="display-nav-list-item">
-                            <a href="">in evidenza</a>
+                            <a href="">scopri</a>
                         </li>
                     </ul>
                 </div>
@@ -117,9 +120,9 @@
                             <h2 class="section-title">Recently played</h2>
                         </div>
                         <!-- contenitore per mettere le section-card allineate orizzontalmente con flex -->
-                        <div class="d-flex gap-1">
+                        <div class="d-flex gap-half wrap-md">
                             <!-- section-card -->
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/metal_lifting.jpg" alt="metal">
                                 </div>
@@ -128,7 +131,7 @@
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/stranger.jpeg" alt="stranger">
                                 </div>
@@ -137,39 +140,39 @@
                                     <h5 class="card-subtitle">Keyle Dixon & Michael Stein</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/aquietplace.jpeg" alt="aquietpiace">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
+                                    <h4 class="card-title">A quiet piace</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/split.jpeg" alt="split">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
+                                    <h4 class="card-title">Split</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card  section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/cure.jpeg" alt="cure">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
+                                    <h4 class="card-title">A cure for Welness</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/sinister.jpeg" alt="sinister">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
+                                    <h4 class="card-title">Sinister</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
@@ -181,23 +184,21 @@
                             <h2 class="section-title">Creato per John Doe</h2>
                             <h5 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h6>
                         </div>
-                        <div class="d-flex gap-1">
-                            <div class="section-card flex-shrink">
+                        <div class="d-flex gap-half wrap-md">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/radar.jpeg" alt="radar">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
-                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <h4 class="card-title">Release Radar</h4>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
                                 <div class="card-img">
                                     <img src="img/mixdaily.jpeg" alt="mixdayli">
                                 </div>
                                 <div class="card-text">
-                                    <h4 class="card-title">Heavy Metal</h4>
-                                    <h5 class="card-subtitle">Subtitle</h5>
+                                    <h4 class="card-title">Daily Mix 1</h4>
                                 </div>
                             </div>
                         </div>
@@ -208,19 +209,19 @@
                             <h2 class="section-title">Artisti più popolari</h2>
                             <h5 class="section-subtitle">Più ascolti, più accurati saranno i suggerimenti</h5>
                         </div>
-                        <div class="d-flex gap-1">
-                            <div class="section-card flex-shrink">
-                                <div class="card-img">
-                                    <img src="img/youg.jpeg" alt="youg">
+                        <div class="d-flex gap-half wrap-md">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                                <div class="card-img card-img-radius">
+                                    <img class="img-radius" src="img/youg.jpeg" alt="youg">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="card-title">Heavy Metal</h4>
                                     <h5 class="card-subtitle">Subtitle</h5>
                                 </div>
                             </div>
-                            <div class="section-card flex-shrink">
-                                <div class="card-img">
-                                    <img src="img/einaudi.jpeg" alt="metal">
+                            <div class="section-card section-card-md section-card-s section-card-xs flex-shrink">
+                                <div class="card-img card-img-radius">
+                                    <img class="img-radius" src="img/einaudi.jpeg" alt="metal">
                                 </div>
                                 <div class="card-text">
                                     <h4 class="card-title">Heavy Metal</h4>
