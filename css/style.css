@@ -46,10 +46,6 @@ html{
     gap: .5rem;
 }
 
-.overflow-hidden{
-    overflow: hidden;
-}
-
 /* sidebar */
 .sidebar{
     width: 200px;
@@ -83,9 +79,32 @@ html{
     padding-bottom: .3rem;
 }
 
+.sidebar-nav a:focus,
+.sidebar-nav a:hover{
+    color: var(--color-primary);
+}
+
+.sidebar-nav a:focus img,
+.sidebar-nav a:hover img{
+    opacity: .9;
+}
+
+.focus-bar-vertical{
+    width: 2px;
+    height: 20px;
+    background-color: #ADFF2F;
+    display: none;
+    transform: translateX(-1rem);
+}
+
+.sidebar-nav a:focus .focus-bar-vertical{
+    display: block;
+}
+
+
 .sidebar-nav a img{
-    width: 20px;
-    opacity: .5;
+    width: 25px;
+    opacity: .6;
 }
 
 .sidebar-nav a .label{
@@ -106,16 +125,24 @@ html{
 
 .sidebar-playlist .add-playlist{
     padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-playlist .add-playlist:hover{
+    color:var(--color-primary)
 }
 
 .sidebar-playlist .add-playlist .add-playlist-icon{
     width: 30px;
     height: 30px;
-    padding: .3rem;
-    font-size: 1.4rem;
-    border: 0;
-    line-height: 1.5rem;
+    padding: 0.4rem;
+    font-size: 1.7rem;
+    line-height: 1.1rem;
     vertical-align: middle;
+    background-color: var(--color-secondary);
+    color: black;
+    display: inline-block;
+    text-align: center;
 }
 
 .sidebar-playlist .add-playlist span{
@@ -131,6 +158,11 @@ html{
 
 .sidebar-playlist .sidebar-playlist-list .sidebar-playlist-list-item{
     padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.sidebar-playlist-list .sidebar-playlist-list-item:hover{
+    color: var(--color-primary);
 }
 
 .sidebar .sidebar-bottom-info .install{
@@ -151,13 +183,13 @@ html{
     background-color: var(--color-secondary);
     width: 23px;
     vertical-align: middle;
-    margin-right: .3rem;
     display: inline-block;
 }
 
 .sidebar-bottom-info .user-name span:last-child{
     color: var(--color-primary);
     font-size: .9rem;
+    padding-left: .3rem;
 }
 
 /* display-container */
@@ -169,24 +201,30 @@ html{
 /* display upgrade */
 .display-container .display-upgrade{
     background-color: #080B12;
-    padding-top: .5rem ;
-    padding-bottom: 1rem;
+    padding-top: .8rem ;
+    padding-bottom: 1.3rem;
 }
 
 .display-upgrade .upgrade-button{
     text-align: right;
+    padding-right: .8rem;
 }
 
 .display-upgrade .upgrade-button a{
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: .7rem;
-    padding: .5rem 2rem;
+    font-size: .8rem;
+    padding: .7rem 2rem;
     background-color: #080B12;
     border: 1px solid var(--color-primary);
     border-radius: 25px;
     color: var(--color-primary);
+    transition: all .5s;
+}
+
+.display-upgrade .upgrade-button a:hover{
+    transform: scale(1.1);
 }
 
 /* display-container/display-nav */
@@ -217,7 +255,7 @@ html{
     transition: color .4s;
 }
 
-.display-nav-list-item .focus-bar{
+.focus-bar{
     width: 50%;
     height: 2px;
     background-color: #ADFF2F;
@@ -364,7 +402,14 @@ html{
 .album-played-icons{
     display: flex;
     gap: .4rem;
+}
+
+.album-played-icons a{
     color: var(--color-secondary);
+}
+
+.album-played-icons a:hover{
+    color: var(--color-primary);
 }
 
 
@@ -372,8 +417,8 @@ html{
 .player .player-controls{
     padding-top: 1rem;
     padding-bottom: 1.5rem;
-    padding-right: .5rem;
-    padding-left: .5rem;
+    padding-right: .7rem;
+    padding-left: .7rem;
     width: 40%;
     max-width: 500px;
     justify-content: space-between;
@@ -382,14 +427,24 @@ html{
 .player-controls .player-controls-icon{
     display: flex;
     justify-content: center;
-    gap: 1rem;
     align-items: center;
+}
+
+.player-controls-icon a{
+    color: var(--color-primary);
+    padding-right: .5rem;
+    padding-left: .5rem;
 }
 
 .player-controls-icon .fa-circle-play{
     font-size: 1.7rem;
     padding-left: .5rem;
     padding-right: .5rem;
+    transition: transform .5s;
+}
+
+.player-controls-icon a .fa-circle-play:hover{
+    transform: scale(1.3);
 }
 
 .player-controls .player-controls-time{
@@ -401,18 +456,43 @@ html{
 }
 
 .player-controls-time .time-bar{
-    height: 3px;
+    height: 4px;
     background-color: var(--color-secondary);
     margin-left: 1.3rem;
     margin-right: 1.3rem;
     border-radius: 50px;
+    cursor: pointer;
+    overflow: revert;
+    position: relative;
 }
 
 .time-bar .time-bar-advancement{
-    height: 3px;
+    height: 4px;
     background-color: var(--color-primary);
     width: 20%;
     border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.time-bar-advancement-point{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: 100%;
+    transform: translateY(-40%);
+    display: none;
+}
+
+
+.time-bar:hover .time-bar-advancement{
+    background-color: #ADFF2F;
+}
+
+.time-bar:hover .time-bar-advancement-point{
+    display: block;
 }
 
 /* player-volume */

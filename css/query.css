@@ -56,13 +56,19 @@
         display: block;
     }
 
-    .album-played-icons{
-        flex-direction: column;
-    }
 
     .player-controls-time .time-bar{
-        margin-right: .6rem;
-        margin-left: .6rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .album-played-name{
+        font-size: .9rem;
+    }
+
+    .album-played-icons{
+        font-size: .9rem;
+        padding-left: .5rem;
     }
 }
 

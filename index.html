@@ -33,19 +33,22 @@
                 <!-- menu-sidebar -->
                 <ul class="sidebar-nav flex-shrink">
                     <li class="sidebar-nav-item">
-                        <a href="" class="d-flex align-center">
+                        <a href="#" class="d-flex align-center">
+                            <div class="focus-bar-vertical"></div>
                             <img src="img/home.svg" alt="home">
                             <div class="label d-none-xs">Home</div>
                         </a>
                     </li>
                     <li class="sidebar-nav-item">
-                        <a href="" class="d-flex align-center">
+                        <a href="#" class="d-flex align-center">
+                            <div class="focus-bar-vertical"></div>
                             <img src="img/search.svg" alt="home">
                             <div class="label d-none-xs">Cerca</div>
                         </a>
                     </li>
                     <li class="sidebar-nav-item">
-                        <a href="" class="d-flex align-center">
+                        <a href="#" class="d-flex align-center">
+                            <div class="focus-bar-vertical"></div>
                             <img src="img/libreria.svg" alt="home">
                             <div class="label d-none-xs">La tua libreria</div>
                         </a>
@@ -55,7 +58,7 @@
                 <div class="sidebar-playlist flex-grow">
                     <h5 class="sidebar-playlist-title d-none-xs">playlist</h5>
                     <div class="add-playlist d-none-xs">
-                        <button class="add-playlist-icon">+</button>
+                        <a class="add-playlist-icon">+</a>
                         <span>Crea Playlist</span>
                     </div>
                     <ul class="sidebar-playlist-list flex-grow d-none-xs">
@@ -71,7 +74,7 @@
                 <!-- install app e nome utente -->
                 <div class="sidebar-bottom-info flex-shrink">
                     <div class="install">
-                        <span><img src="img/download.svg" alt=""></i></span>
+                        <span><img src="img/download.svg" alt=""></span>
                         <span class="d-none-xs">install app</span>
                     </div>
                     <div class="user-name">
@@ -301,23 +304,26 @@
                     </div>
                 </div>
                 <div class="album-played-icons">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
+                    <a href=""><i class="fa-regular fa-heart"></i></a>
+                    <a href=""><i class="fa-regular fa-folder"></i></a>
                 </div>
             </div>
             <!-- player-controls -->
             <div class="player-controls d-flex column">
                 <div class="player-controls-icon">
-                    <i class="fa-solid fa-repeat"></i>
-                    <i class="fa-solid fa-backward-step"></i>
-                    <i class="fa-regular fa-circle-play"></i>
-                    <i class="fa-solid fa-forward-step"></i>
-                    <i class="fa-solid fa-rotate-right"></i>
+                    <a href=""><i class="fa-solid fa-shuffle"></i></a>
+                    <a href=""><i class="fa-solid fa-backward-step"></i></a>
+                    <a href=""><i class="fa-regular fa-circle-play"></i></a>
+                    <a href=""><i class="fa-solid fa-forward-step"></i></a>
+                    <a href=""><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
                 <div class="player-controls-time align-center">
                     <div class="timer">0.25</div>
                     <div class="time-bar flex-grow">
-                        <div class="time-bar-advancement"></div>
+                        <div class="time-bar-advancement">
+                            <div class="time-bar-advancement-point"></div>
+                        </div>
+                        
                     </div>
                     <div class="timer">4.35</div>
                 </div>
